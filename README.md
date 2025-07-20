@@ -29,3 +29,5 @@ tipos de movimientos en el futuro, solo sería necesario extender el prototipo b
 
 La elección de este enfoque, en lugar del uso de clases modernas, responde al objetivo del proyecto de aplicar conceptos fundamentales de JavaScript como Object.create() y el manejo explícito del prototipo.
 
+# Sitio desplegado:
+https://laurasalas-dev.github.io/laboratorio_mod_2/
