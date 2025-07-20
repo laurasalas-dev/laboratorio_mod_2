@@ -58,12 +58,12 @@ function agregarMovimiento(tipo, descripcion, monto) {
 //funcional
 
 function mostrarResumen() {
-    const totalIngresos = movimientos
-        filter(m => m instanceof Ingreso)
+    const totalIngresos = movimientos.
+        filter(m => m instanceof Ingreso).
         reduce((sum, m) => sum + m.monto, 0);
 
-    const totalEgresos = movimientos
-        filter(m => m instanceof Egreso)
+    const totalEgresos = movimientos.
+        filter(m => m instanceof Egreso).
         reduce((sum, m) => sum + m.monto, 0);
 
     console.log("\nRESUMEN FINANCIERO");
@@ -128,5 +128,5 @@ console.log("\n🧬 Validaciones prototipales:");
 const demo = new Ingreso("Bono", 500);
 console.log(demo instanceof Ingreso);      
 console.log(demo instanceof Movimiento);   
-console.log(Object.getPrototypeOf(demo) === Ingreso.prototype); // true
+console.log(Object.getPrototypeOf(demo) === Ingreso.prototype); 
 console.log(Object.getPrototypeOf(Object.getPrototypeOf(demo)) === Movimiento.prototype); 
